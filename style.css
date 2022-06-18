@@ -14,6 +14,14 @@ body{
     color: #434343
 }
 
+
+.cont h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
 main.cards{
     display: flex;
     padding: 32px;
@@ -92,11 +100,15 @@ main.cards section.card.about{
 }
 
 @media screen and (max-width:720px) {
+    .cont h1{
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
     main.cards{
         flex-direction: column;
-
+        
     }
-
+    
     main.cards section.card {
         margin-left: 0;
         margin-bottom: 32px;
@@ -105,8 +117,9 @@ main.cards section.card.about{
     main.cards section.card:last-child{
         margin-bottom: 0;
     }
-
+    
     main.cards section.card button{
         font-size: 70%;
     }
+    
 }
